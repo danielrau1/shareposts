@@ -10,7 +10,9 @@ class Pages extends Controller{ // (B1)
 
     // (A3.1) make this function like this don't ger error if don't include a url
     public function index(){ //(B2) can use the methods of the Controller
-
+        if(isLoggedIn()){
+            redirect('posts'); //Once logged in don't go back to home page
+        }
         $data = [
             'title'=>'SharePosts'
 

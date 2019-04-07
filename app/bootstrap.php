@@ -4,6 +4,7 @@ require_once 'config/config.php';
 
 // load helpers
 require_once 'helpers/url_helper.php';
+require_once 'helpers/session_helper.php';
 
 // Load libraries - in (B5) it loads all classes in the library automatically
 //require_once 'libraries/core.php'; //(A)
